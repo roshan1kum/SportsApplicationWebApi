@@ -1,0 +1,22 @@
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.deps.json
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.runtimeconfig.json
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.runtimeconfig.dev.json
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.dll
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.csprojAssemblyReference.cache
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.csproj.CoreCompileInputs.cache
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.AssemblyInfoInputs.cache
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.AssemblyInfo.cs
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.pdb
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.dll
+C:\Users\roshan\source\repos\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.pdb
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.deps.json
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.runtimeconfig.json
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.runtimeconfig.dev.json
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.dll
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\bin\Debug\netcoreapp2.0\SportsApplicationApi.pdb
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.csprojAssemblyReference.cache
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.csproj.CoreCompileInputs.cache
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.AssemblyInfoInputs.cache
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.AssemblyInfo.cs
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.dll
+C:\Users\roshan\Desktop\Web Api\SportsApplicationApi\SportsApplicationApi\obj\Debug\netcoreapp2.0\SportsApplicationApi.pdb

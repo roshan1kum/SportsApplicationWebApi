@@ -1,0 +1,19 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label>
+              Name:
+              <input type="text" name ="Name" formControlName="Name" class="form-control">
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+             Distance:
+             <input type="text" name ="Distance" formControlName="Distance" class="form-control">
+            </label>
+        </div>
+            <div class="form-control">
+                <button class="btn btn-success" type="submit" [disabled]="!profileForm.valid">Create</button>
+            </div>
+</form>
+    
+    
