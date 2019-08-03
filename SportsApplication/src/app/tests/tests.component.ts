@@ -10,7 +10,9 @@ import { TestDetail } from '../Shared/test-details.model';
 export class TestsComponent implements OnInit {
 
   Tests : TestDetail[];
-  constructor(private service : TestDetailsService) { }
+  constructor(private service : TestDetailsService) { 
+    this.getTests();
+  }
   
   ngOnInit() {
     this.getTests();
