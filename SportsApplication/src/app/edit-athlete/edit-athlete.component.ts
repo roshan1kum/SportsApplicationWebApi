@@ -58,7 +58,7 @@ export class EditAthleteComponent implements OnInit {
   }
   onDelete()
   {
-    alert("jhef");
+    //alert("jhef");
     const id=+this.route.snapshot.paramMap.get('id');
     this.service.DeleteAthlete(id).subscribe();
   }

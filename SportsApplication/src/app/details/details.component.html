@@ -1,5 +1,5 @@
-<div class="container">
-<h1>{{pageTitle}}</h1>
+<div class="form-control">
+<h2>{{pageTitle}}</h2>
 <a class="btn btn-success" routerLink="/AddAthlete/{{id}}">Add New Athlete</a>
 <table class='table'>
         <tr>
@@ -15,7 +15,10 @@
         </tr>
 </table>
 </div>
-<div class="container">
+<div class="form-control">
   <button class="btn btn-success" (click)="onDelete()">Delete Test</button>
+</div>
+<div class="form-control">
+  <button class="btn btn-success" (click)="Back()">Back To Test</button>
 </div>
 

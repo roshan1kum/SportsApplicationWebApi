@@ -26,7 +26,8 @@ export class DetailsComponent implements OnInit {
     this.id=+this.route.snapshot.paramMap.get('id');
     this.service.testdetailId(this.id).subscribe(tests => {
       this.Test = tests;
-      this.pageTitle= this.Test.test_type;
+      this.pageTitle= this.Test.test_type+" "+this.Test.date;
+     
     });
   }
   getAthleteDetails():void{
@@ -42,5 +43,9 @@ export class DetailsComponent implements OnInit {
       this.router.navigate(['Test']);
     });
     
+  }
+  Back()
+  {
+    this.router.navigate(['Test']);
   }
 }

@@ -1,17 +1,17 @@
-<div class="container">
+<div class="form-control">
   <a class="btn btn-success" routerLink="/Create">CREATE TEST</a>
     <table class='table'>
         <tr>
           <th>Date</th>
           <th>Number Of Participants</th> 
           <th>Test Type</th>
-          <th>ID</th>
+          
         </tr>
-        <tr *ngFor="let pd of Tests">
+        <tr *ngFor="let pd of Tests" [routerLink]="['/Details',pd.testId]">
             <td>{{pd.date}}</td>
             <td>{{pd.number_participants}}</td>
             <td>{{pd.test_type}}</td>
-            <td><a class="btn btn-success" [routerLink]="['/Details',pd.testId]">Details</a></td>
+            <!-- <td><a class="btn btn-success" [routerLink]="['/Details',pd.testId]">Details</a></td> -->
         </tr>
 </table>
 </div>
