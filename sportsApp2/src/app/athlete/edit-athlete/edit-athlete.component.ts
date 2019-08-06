@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { Details } from '../Shared/Details.model';
-import { FormControl, FormGroup } from '@angular/forms';
-import { AthleteService } from '../Shared/athlete.service';
+import { Details } from '../../Shared/Details.module';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AthleteService } from '../athlete.service';
+import { FormGroup, FormControl } from '@angular/forms';
 import { Location } from '@angular/common';
 
 @Component({
@@ -14,14 +14,14 @@ export class EditAthleteComponent implements OnInit {
   id:number;
 
   detail:Details = new Details();
-  constructor(private route:ActivatedRoute,private service:AthleteService,private router:Router,private location:Location) { }
-  
-  profileForm = new FormGroup({
+   constructor(private route:ActivatedRoute,private service:AthleteService,private router:Router,private location:Location) { }
+
+   profileForm = new FormGroup({
     Name: new FormControl(''),
     Distance: new FormControl(''),
   });
 
-  ngOnInit() {
+   ngOnInit() {
     this.id=+this.route.snapshot.paramMap.get('id');
     this.route.paramMap.subscribe(params => {
       const ID = +params.get('id');
@@ -62,3 +62,4 @@ export class EditAthleteComponent implements OnInit {
     this.service.DeleteAthlete(id).subscribe();
   }
 }
+

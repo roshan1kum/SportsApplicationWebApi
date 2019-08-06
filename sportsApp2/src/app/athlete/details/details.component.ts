@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Test } from '../../Shared/Test.model';
+import { Details } from '../../Shared/Details.module';
 import { ActivatedRoute, Router } from '@angular/router';
-import { TestDetailsService } from '../Shared/test-details.service';
-import { TestDetail } from '../Shared/test-details.model';
-import { Details } from '../Shared/Details.model';
-import { AthleteDetailsComponent } from '../athlete-details/athlete-details.component';
-import { AthleteService } from '../Shared/athlete.service';
+import { TestService } from '../../test/test.service';
+import { AthleteService } from '../athlete.service';
 
 @Component({
   selector: 'app-details',
@@ -12,16 +11,17 @@ import { AthleteService } from '../Shared/athlete.service';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  Test:TestDetail;
+  Test:Test;
   id:number;
   pageTitle:string;
   result:Details[];
-  constructor(private route:ActivatedRoute,private service:TestDetailsService,private serv:AthleteService,private router:Router) { }
+  constructor(private route:ActivatedRoute,private service:TestService,private serv:AthleteService,private router:Router) { 
+    this.getAthleteDetails();
+  }
 
   ngOnInit() {
-    this.getTest();
-    debugger;
-    this.getAthleteDetails();
+     this.getTest();
+     this.getAthleteDetails();
   }
   getTest():void{
     this.id=+this.route.snapshot.paramMap.get('id');
@@ -40,13 +40,16 @@ export class DetailsComponent implements OnInit {
   onDelete()
   {
     const id=+this.route.snapshot.paramMap.get('id');
-    this.service.DeleteTest(id).subscribe(res=>{
-      this.router.navigate(['Test']);
-    });
+    this.service.DeleteTest(id).subscribe(
+       res=>{
+      this.router.navigate(['']);
+     }
+  );
     
   }
   Back()
   {
-    this.router.navigate(['Test']);
+    this.router.navigate(['']);
   }
+  
 }

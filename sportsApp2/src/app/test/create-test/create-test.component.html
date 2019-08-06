@@ -1,0 +1,22 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label>
+          Date:
+          <input type="text" name ="Date" formControlName="Date" class="form-control">
+        </label>
+    </div>
+    <div class="form-control">
+        <label>
+          Test Type:
+          <select class = "form-control"  formControlName="test_type">
+                <option value="">Choose your Test</option>
+                <option *ngFor = "let test of TestType" [(ngValue)]="test" >{{test}}</option>
+             </select>
+           <!-- <input type="text" name="test_type" formControlName="test_type"class="form-control">  -->
+        </label>
+    </div>
+        <div class="form-control">
+            <button class="btn btn-success" type="submit" [disabled]="!profileForm.valid">Create</button>
+        </div>
+</form>
+

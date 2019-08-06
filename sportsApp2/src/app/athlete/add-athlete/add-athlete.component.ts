@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Details } from '../Shared/Details.model';
-import { TestDetailsService } from '../Shared/test-details.service';
-import { AthleteService } from '../Shared/athlete.service';
+import { Details } from '../../Shared/Details.module';
+import { AthleteService } from '../athlete.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-athlete',

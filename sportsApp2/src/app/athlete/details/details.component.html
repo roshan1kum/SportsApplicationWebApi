@@ -1,0 +1,24 @@
+<div class="form-control">
+    <h2>{{pageTitle}}</h2>
+    <a class="btn btn-success" routerLink="AddAthlete/{{id}}">Add New Athlete</a>
+    <table class='table'>
+            <tr>
+              <th>Name</th>
+              <th>Distance</th> 
+              <th>Fitness Rating</th>
+            </tr>
+            <tr *ngFor="let pd of result" [routerLink]="['Edit/',pd.testResultId]">
+                <td>{{pd.name}}</td>
+                <td>{{pd.distance}}</td>
+                <td>{{pd.fitnessRating}}</td>
+            </tr>
+    </table>
+    </div>
+    <div class="form-control">
+      <button class="btn btn-" (click)="onDelete()">Delete Test</button>
+    </div>
+    <div class="form-control">
+      <button class="btn btn-success" (click)="Back()">Back To Test</button>
+    </div>
+    
+    

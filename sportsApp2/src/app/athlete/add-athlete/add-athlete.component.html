@@ -1,5 +1,4 @@
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-        
         <div class="form-control">
             <label>
               Name:
@@ -12,12 +11,9 @@
              <input type="text" name ="Distance" formControlName="Distance" class="form-control">
             </label>
         </div>
-            <div class="panel-footer">
-            <div class="btn-toolbar">
-                <button class="btn btn-success" type="submit" [disabled]="!profileForm.valid">Edit</button>
-                <button class="btn btn-success" (click)="onDelete()">Delete Athlete</button>
+            <div class="form-control">
+                <button class="btn btn-success" type="submit" [disabled]="!profileForm.valid">Create</button>
             </div>
-        </div>
 </form>
     
     

@@ -16,6 +16,7 @@ export class AthleteDetailsComponent implements OnInit {
   constructor(private service:AthleteService,private route:ActivatedRoute,private router:Router) { }
 
   ngOnInit() {
+    debugger;
     this.getAthleteDetails();
   }
   getAthleteDetails():void{

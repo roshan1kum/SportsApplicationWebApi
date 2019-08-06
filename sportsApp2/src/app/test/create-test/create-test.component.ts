@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TestDetailsService } from '../Shared/test-details.service';
-import { NgForm } from '@angular/forms';
+import { Test } from '../../Shared/Test.model';
+import { TestService } from '../test.service';
 import { FormGroup, FormControl } from '@angular/forms';
-import { TestDetail } from '../Shared/test-details.model';
 import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-create-test',
@@ -12,10 +10,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-test.component.css']
 })
 export class CreateTestComponent implements OnInit {
-  Test:TestDetail;
+
+  Test:Test;
   TestType=["Cooper","sprint"];
 
-  constructor(private service:TestDetailsService,private router:Router) { }
+  constructor(private service:TestService,private router:Router) { }
 
   profileForm = new FormGroup({
     Date: new FormControl(''),
@@ -33,6 +32,6 @@ export class CreateTestComponent implements OnInit {
       err=>{
         console.log(err);
       })
-      this.router.navigate(['Test'])
+      this.router.navigate([''])
   }
 }

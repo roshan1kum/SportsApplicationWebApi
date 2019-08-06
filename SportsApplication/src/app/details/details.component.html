@@ -7,16 +7,15 @@
           <th>Distance</th> 
           <th>Fitness Rating</th>
         </tr>
-        <tr *ngFor="let pd of result" (click)="onClick()">
+        <tr *ngFor="let pd of result" [routerLink]="['/Edit/',pd.testResultId]">
             <td>{{pd.name}}</td>
             <td>{{pd.distance}}</td>
             <td>{{pd.fitnessRating}}</td>
-            <td><a class="btn btn-success" [routerLink]="['/Edit/',pd.testResultId]">Edit</a></td>
         </tr>
 </table>
 </div>
 <div class="form-control">
-  <button class="btn btn-success" (click)="onDelete()">Delete Test</button>
+  <button class="btn btn-" (click)="onDelete()">Delete Test</button>
 </div>
 <div class="form-control">
   <button class="btn btn-success" (click)="Back()">Back To Test</button>
